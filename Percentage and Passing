@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public static void main() {
+    Scanner s = new Scanner(System.in);
+    float math, phy, comp, eng, urdu;
+    System.out.print("Enter marks of math:");
+    math = s.nextFloat();
+    System.out.print("Enter marks of phy:");
+    phy = s.nextFloat();
+    System.out.print("Enter marks of comp:");
+    comp = s.nextFloat();
+    System.out.print("Enter marks of eng:");
+    eng = s.nextFloat();
+    System.out.print("Enter marks of urdu:");
+    urdu = s.nextFloat();
+    float total = math+phy+comp+eng+urdu;
+    float per = total/500*100f;
+    System.out.println("Your percentage is ");
+    System.out.println(per);
+    if(math>=33 && phy>=33 && comp>=33 && eng>=33 && urdu>=33 && per>=40){
+        System.out.println("Congrates! you will be appear.");
+    }
+    else
+    {
+        System.out.println("Sorry you are failure.");
+    }
+
+}
